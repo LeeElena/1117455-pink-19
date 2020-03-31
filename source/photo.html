@@ -40,7 +40,7 @@
       <ul class="gallery__list">
         <li class="gallery__item photo">
           <img class="photo__image photo__image--wide" src="img/panorama-mobile.jpg" width="320" height="137" alt="Панорама">
-          <span class="photo__insert">Панорама дня</span>
+          <span class="photo__insert insert">Панорама дня</span>
           <p class="photo__user"><span class="photo__name">Анна</span> (5 минут назад)</p>
           <p class="photo__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в
             перископе, задавайте свои вопросы!</p>
@@ -89,6 +89,37 @@
           <p class="photo__like">Нравится: 2560</p>
         </li>
       </ul>
+    </section>
+
+    <section class="photo-processing">
+      <p class="gallery__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+      <img class="photo-processing__image" src="img/photo-mobile-7.jpg" width="280" height="374" alt="Зимний день">
+      <form class="photo-processing__form" action="/photo.processing" method="post">
+        <label class="radio">
+          <input class="radio__input" type="radio" name="framing">
+          <span class="radio__button"></span>
+          Кадрирование
+        </label>
+
+        <label class="radio">
+          <input class="radio__input" type="radio" name="color">
+          <span class="radio__button"></span>
+          Цвет
+        </label>
+
+        <label class="radio">
+          <input class="radio__input" type="radio" name="contrast">
+          <span class="radio__button"></span>
+          Контрастность
+        </label>
+
+        <label class="range">
+          <input class="range__input" type="range" name="framing-toggle">
+        </label>
+
+        <button class="photo-processing__buttons button" type="button">Запостить</button>
+        <button class="photo-processing__buttons button" type="button">Отмена</button>
+      </form>
     </section>
   </main>
 
