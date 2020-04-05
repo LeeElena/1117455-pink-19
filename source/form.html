@@ -34,7 +34,98 @@
 
   <main class="page-form">
     <h2 class="page-title">Конкурс на самое безбашенное путешествие с Пинк</h2>
+    <section class="main-form">
+      <h1 class="visually-hidden">Заполнение формы</h1>
+      <p class="main-form__text page-text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
 
+      <form class="main-form__form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="main-form__blank fill-in-form">
+          <label class="fill-in-form__info">
+            Фамилия:
+            <input class="fill-in-form__input" type="text" name="surname" placeholder="Укажите фамилию *">
+          </label>
+          <label class="fill-in-form__info">
+            Имя:
+            <input class="fill-in-form__input" type="text" name="first-name" placeholder="Введите ваше имя *">
+          </label>
+          <label class="fill-in-form__info">
+            Отчество:
+            <input class="fill-in-form__input" type="text" name="patronymic" placeholder="Ну и отчество тоже *">
+          </label>
+        </div>
+
+        <div class="main-form__blank choose-form">
+          <fieldset>
+            <legend class="choose-form__title">Ваши безбашенные достижения в путешествии</legend>
+            <label class="choose-form__info">
+              <input class="choose-form__input" type="checkbox" name="selfie" checked> Сделал селфи с акулой
+            </label>
+
+            <label class="choose-form__info">
+              <input class="choose-form__input" type="checkbox" name="beach" checked> Обгорел на пляже
+            </label>
+
+            <label class="choose-form__info">
+              <input class="choose-form__input" type="checkbox" name="Chuck-Norris"> Видел Чака Норриса
+            </label>
+
+            <label class="choose-form__info">
+              <input class="choose-form__input" type="checkbox" name="souvenirs"> Накупил сувениров
+            </label>
+
+            <label class="choose-form__info">
+              <input class="choose-form__input" type="checkbox" name="tower" checked> Удержал башню
+            </label>
+
+            <label class="choose-form__info">
+              <input class="choose-form__input" type="checkbox" name="hotel"> Разгромил отель
+            </label>
+          </fieldset>
+        </div>
+
+        <div class="main-form__blank fill-in-form">
+          <label class="fill-in-form__info">
+            Номер телефона
+            <input class="fill-in__input" type="tel" name="tel" placeholder="Номер, пожалуйста">
+          </label>
+
+          <label class="fill-in-form__info">
+            Адрес почты
+            <input class="fill-in__input" type="email" name="email" placeholder="Введите почту *">
+          </label>
+        </div>
+
+        <div class="main-form__blank choose-form">
+          <fieldset>
+            <legend class="choose-form__title">С каким приложением путешествовали?</legend>
+            <label class="choose-form__info">
+              <input class="choose-form__input" type="radio" name="iOS" checked> Pink для iOS
+            </label>
+
+            <label class="choose-form__info">
+              <input class="choose-form__input" type="radio" name="Android"> Pink на Android
+            </label>
+
+            <label class="choose-form__info">
+              <input class="choose-form__input" type="radio" name="Windows"> Windows Phone
+            </label>
+          </fieldset>
+        </div>
+
+        <div class="main-form__blank fill-in-form">
+          <label class="fill-in-form__info">
+            Опишите свои эмоции
+            <textarea class="fill-in-form__textarea" rows="8" cols="30">Можно прям в красках, не стесняясь в выражениях</textarea>
+          </label>
+        </div>
+
+        <input class="main-form__button" type="submit" value="Отправить форму">
+
+        <small class="main-form__legend">
+          <sup>*</sup> — Обязательные поля
+        </small>
+      </form>
+    </section>
   </main>
 
   <footer class="page-footer">
